@@ -55,8 +55,8 @@
 				72315E4D24325A6700DC956D /* AppDelegate */,
 				72315E4F24325A7C00DC956D /* Assets */,
 				72315E5124325A8B00DC956D /* Configuration */,
-				72315E4E24325A7200DC956D /* DisplayLaunchpads */,
 				72315E5024325A8300DC956D /* Launchscreen */,
+				72315E5224325B6F00DC956D /* Modules */,
 			);
 			path = SpaceXLaunchpads;
 			sourceTree = "<group>";
@@ -99,6 +99,22 @@
 				72315E47243259C100DC956D /* Info.plist */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		72315E5224325B6F00DC956D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				72315E5324325B7A00DC956D /* LaunchpadDetails */,
+				72315E4E24325A7200DC956D /* DisplayLaunchpads */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		72315E5324325B7A00DC956D /* LaunchpadDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LaunchpadDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
