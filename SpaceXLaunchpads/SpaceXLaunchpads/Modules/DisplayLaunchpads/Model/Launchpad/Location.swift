@@ -23,3 +23,12 @@ extension Location: ImmutableMappable {
         longitude = try map.value("longitude")
     }
 }
+
+extension Location {
+    init() {
+        self.init(name: .empty,
+                  region: .empty,
+                  latitude: 0,
+                  longitude: 0)
+    }
+}

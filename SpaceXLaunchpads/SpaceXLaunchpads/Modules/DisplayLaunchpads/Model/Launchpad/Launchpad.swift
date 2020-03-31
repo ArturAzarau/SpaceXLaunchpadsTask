@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-struct Launchpad: ImmutableMappable {
+final class Launchpad: NSObject, ImmutableMappable {
     
     // MARK: - Properties
     
@@ -23,6 +23,30 @@ struct Launchpad: ImmutableMappable {
     let successfulLaunches: Int
     let wikipedia: String
     let details: String
+    
+    init(padid: Int,
+         id: String,
+         name: String,
+         fullName: String,
+         status: String,
+         location: Location,
+         vehiclesLaunched: [String],
+         attemptedLaunches: Int,
+         successfulLaunches: Int,
+         wikipedia: String,
+         details: String) {
+        self.padid = padid
+        self.id = id
+        self.name = name
+        self.fullName = fullName
+        self.status = status
+        self.location = location
+        self.vehiclesLaunched = vehiclesLaunched
+        self.attemptedLaunches = attemptedLaunches
+        self.successfulLaunches = successfulLaunches
+        self.wikipedia = wikipedia
+        self.details = details
+    }
     
     // MARK: - Mappable
     
