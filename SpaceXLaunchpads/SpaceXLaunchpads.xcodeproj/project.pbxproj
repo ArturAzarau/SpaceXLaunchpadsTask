@@ -11,6 +11,11 @@
 		721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */; };
 		721688BF2433B43400F04B42 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688BE2433B43400F04B42 /* Location.swift */; };
 		721688C12433B5BE00F04B42 /* Launchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688C02433B5BE00F04B42 /* Launchpad.swift */; };
+		721688C62433B89A00F04B42 /* NetworkFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688C52433B89A00F04B42 /* NetworkFetchingService.swift */; };
+		721688C92433B8EA00F04B42 /* PromiseKitNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688C82433B8EA00F04B42 /* PromiseKitNetworkService.swift */; };
+		721688CC2433B91D00F04B42 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688CB2433B91D00F04B42 /* NetworkServiceError.swift */; };
+		721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688CD2433B97900F04B42 /* String+Extensions.swift */; };
+		721688D22433BA0100F04B42 /* ObjectsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D12433BA0100F04B42 /* ObjectsMapper.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
 		72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
@@ -40,6 +45,11 @@
 		721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsViewModel.swift; sourceTree = "<group>"; };
 		721688BE2433B43400F04B42 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		721688C02433B5BE00F04B42 /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
+		721688C52433B89A00F04B42 /* NetworkFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingService.swift; sourceTree = "<group>"; };
+		721688C82433B8EA00F04B42 /* PromiseKitNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitNetworkService.swift; sourceTree = "<group>"; };
+		721688CB2433B91D00F04B42 /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		721688CD2433B97900F04B42 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		721688D12433BA0100F04B42 /* ObjectsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsMapper.swift; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsVC.swift; sourceTree = "<group>"; };
@@ -90,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				721688B7243398A600F04B42 /* UIWindow+Extensions.swift */,
+				721688CD2433B97900F04B42 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -114,10 +125,70 @@
 		721688BD2433AFD100F04B42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				721688CF2433B9E100F04B42 /* ObjectMapper */,
+				721688C32433B87D00F04B42 /* Network Service */,
+				721688C22433B86F00F04B42 /* Launchpad */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		721688C22433B86F00F04B42 /* Launchpad */ = {
+			isa = PBXGroup;
+			children = (
 				721688BE2433B43400F04B42 /* Location.swift */,
 				721688C02433B5BE00F04B42 /* Launchpad.swift */,
 			);
-			path = Model;
+			path = Launchpad;
+			sourceTree = "<group>";
+		};
+		721688C32433B87D00F04B42 /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				721688CA2433B90F00F04B42 /* Errors */,
+				721688C72433B8B500F04B42 /* PromiseKit NetworkService */,
+				721688C42433B88500F04B42 /* Protocols */,
+			);
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		721688C42433B88500F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				721688C52433B89A00F04B42 /* NetworkFetchingService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		721688C72433B8B500F04B42 /* PromiseKit NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				721688C82433B8EA00F04B42 /* PromiseKitNetworkService.swift */,
+			);
+			path = "PromiseKit NetworkService";
+			sourceTree = "<group>";
+		};
+		721688CA2433B90F00F04B42 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				721688CB2433B91D00F04B42 /* NetworkServiceError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		721688CF2433B9E100F04B42 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				721688D02433B9F200F04B42 /* Protocols */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		721688D02433B9F200F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				721688D12433BA0100F04B42 /* ObjectsMapper.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		72315E2D243259BC00DC956D = {
@@ -461,12 +532,17 @@
 				72315E7A2432745400DC956D /* AppRouter.swift in Sources */,
 				72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */,
 				72315E67243262A400DC956D /* LaunchpadsCoordinator.swift in Sources */,
+				721688CC2433B91D00F04B42 /* NetworkServiceError.swift in Sources */,
+				721688D22433BA0100F04B42 /* ObjectsMapper.swift in Sources */,
 				72315E6124325F4300DC956D /* StackRoutable.swift in Sources */,
+				721688C92433B8EA00F04B42 /* PromiseKitNetworkService.swift in Sources */,
 				72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */,
+				721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */,
 				72315E5824325C4100DC956D /* Coordinatable.swift in Sources */,
 				721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */,
 				721688BF2433B43400F04B42 /* Location.swift in Sources */,
 				72315E78243270DC00DC956D /* AppRoutable.swift in Sources */,
+				721688C62433B89A00F04B42 /* NetworkFetchingService.swift in Sources */,
 				72315E722432656800DC956D /* LaunchpadsStorage.swift in Sources */,
 				721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */,
 				72315E7F2432762C00DC956D /* AppCoordinator.swift in Sources */,
