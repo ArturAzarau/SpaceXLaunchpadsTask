@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688B7243398A600F04B42 /* UIWindow+Extensions.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
 		72315E3E243259BC00DC956D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* ViewController.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		721688B7243398A600F04B42 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72315E3D243259BC00DC956D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		721688B62433989100F04B42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				721688B7243398A600F04B42 /* UIWindow+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		72315E2D243259BC00DC956D = {
 			isa = PBXGroup;
 			children = (
@@ -86,9 +96,10 @@
 			children = (
 				72315E4D24325A6700DC956D /* AppDelegate */,
 				72315E4F24325A7C00DC956D /* Assets */,
-				72315E5124325A8B00DC956D /* Configuration */,
-				72315E5024325A8300DC956D /* Launchscreen */,
 				72315E5424325C2000DC956D /* Common */,
+				72315E5124325A8B00DC956D /* Configuration */,
+				721688B62433989100F04B42 /* Extensions */,
+				72315E5024325A8300DC956D /* Launchscreen */,
 				72315E5224325B6F00DC956D /* Modules */,
 			);
 			path = SpaceXLaunchpads;
@@ -353,6 +364,7 @@
 				72315E5824325C4100DC956D /* Coordinatable.swift in Sources */,
 				72315E78243270DC00DC956D /* AppRoutable.swift in Sources */,
 				72315E722432656800DC956D /* LaunchpadsStorage.swift in Sources */,
+				721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */,
 				72315E7F2432762C00DC956D /* AppCoordinator.swift in Sources */,
 				72315E6524325FC500DC956D /* Presentable.swift in Sources */,
 				72315E83243279AA00DC956D /* CoordinatorFactory.swift in Sources */,
