@@ -10,4 +10,5 @@ target 'SpaceXLaunchpads' do
   pod 'PromiseKit'
   pod 'RealmSwift'
   pod 'ObjectMapper'
+  pod 'Bond'
 end

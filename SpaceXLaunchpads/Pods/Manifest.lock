@@ -1,4 +1,8 @@
 PODS:
+  - Bond (7.6.6):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.5)
   - ObjectMapper (3.5.2)
   - PromiseKit (6.13.1):
     - PromiseKit/CorePromise (= 6.13.1)
@@ -9,6 +13,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.13.1):
     - PromiseKit/CorePromise
+  - ReactiveKit (3.16.3)
   - Realm (4.4.0):
     - Realm/Headers (= 4.4.0)
   - Realm/Headers (4.4.0)
@@ -17,6 +22,7 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - Bond
   - ObjectMapper
   - PromiseKit
   - RealmSwift
@@ -24,19 +30,25 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Bond
+    - Differ
     - ObjectMapper
     - PromiseKit
+    - ReactiveKit
     - Realm
     - RealmSwift
     - SnapKit
 
 SPEC CHECKSUMS:
+  Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
   ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  ReactiveKit: faec214ebc027b371b8037e0cf6336bacd42b889
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RealmSwift: 33656a42bd300959a081fc13347376bc478071af
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 8ee499de029fc1defa4443afe29f3352939f3b89
+PODFILE CHECKSUM: 005a0403c204dddd3f50366f190775317d53e6aa
 
 COCOAPODS: 1.9.1
