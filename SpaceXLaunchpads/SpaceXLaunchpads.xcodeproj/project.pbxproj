@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688B7243398A600F04B42 /* UIWindow+Extensions.swift */; };
-		721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */; };
 		721688BF2433B43400F04B42 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688BE2433B43400F04B42 /* Location.swift */; };
 		721688C12433B5BE00F04B42 /* Launchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688C02433B5BE00F04B42 /* Launchpad.swift */; };
 		721688C62433B89A00F04B42 /* NetworkFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688C52433B89A00F04B42 /* NetworkFetchingService.swift */; };
@@ -24,8 +23,18 @@
 		721688E42433BFCA00F04B42 /* LaunchpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688E32433BFCA00F04B42 /* LaunchpadCell.swift */; };
 		721688E82433C04900F04B42 /* CellMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688E72433C04900F04B42 /* CellMaker.swift */; };
 		721688EB2433C09B00F04B42 /* LaunchpadCellMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688EA2433C09B00F04B42 /* LaunchpadCellMaker.swift */; };
+		721688EF2433D51D00F04B42 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688EE2433D51D00F04B42 /* DatabaseService.swift */; };
+		721688F12433D53900F04B42 /* BackgroundWritingDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688F02433D53900F04B42 /* BackgroundWritingDatabaseService.swift */; };
+		721688F62433D58B00F04B42 /* RealmBackgroundWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688F52433D58B00F04B42 /* RealmBackgroundWriter.swift */; };
+		721688F92433D5C100F04B42 /* RealmDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688F82433D5C100F04B42 /* RealmDatabaseService.swift */; };
+		721688FC2433D5E900F04B42 /* RealmLaunchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688FB2433D5E900F04B42 /* RealmLaunchpad.swift */; };
+		721688FE2433D62400F04B42 /* RealmLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688FD2433D62400F04B42 /* RealmLocation.swift */; };
+		721689012433D91A00F04B42 /* FillableWithValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721689002433D91A00F04B42 /* FillableWithValues.swift */; };
+		721689042433DA4000F04B42 /* FetchingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721689032433DA4000F04B42 /* FetchingViewModel.swift */; };
+		721689082433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721689072433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift */; };
+		7216890A2433E5D100F04B42 /* RealmThreadWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721689092433E5D100F04B42 /* RealmThreadWorker.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
-		72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */; };
+		72315E3E243259BC00DC956D /* FetchingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* FetchingVC.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
 		72315E46243259C100DC956D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72315E44243259C100DC956D /* LaunchScreen.storyboard */; };
 		72315E5824325C4100DC956D /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E5724325C4100DC956D /* Coordinatable.swift */; };
@@ -50,7 +59,6 @@
 /* Begin PBXFileReference section */
 		0E05A0BE6A5F54ECBB56BCD4 /* Pods-SpaceXLaunchpads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunchpads.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads.debug.xcconfig"; sourceTree = "<group>"; };
 		721688B7243398A600F04B42 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
-		721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsViewModel.swift; sourceTree = "<group>"; };
 		721688BE2433B43400F04B42 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		721688C02433B5BE00F04B42 /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
 		721688C52433B89A00F04B42 /* NetworkFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingService.swift; sourceTree = "<group>"; };
@@ -66,9 +74,19 @@
 		721688E32433BFCA00F04B42 /* LaunchpadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadCell.swift; sourceTree = "<group>"; };
 		721688E72433C04900F04B42 /* CellMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMaker.swift; sourceTree = "<group>"; };
 		721688EA2433C09B00F04B42 /* LaunchpadCellMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadCellMaker.swift; sourceTree = "<group>"; };
+		721688EE2433D51D00F04B42 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		721688F02433D53900F04B42 /* BackgroundWritingDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundWritingDatabaseService.swift; sourceTree = "<group>"; };
+		721688F52433D58B00F04B42 /* RealmBackgroundWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBackgroundWriter.swift; sourceTree = "<group>"; };
+		721688F82433D5C100F04B42 /* RealmDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseService.swift; sourceTree = "<group>"; };
+		721688FB2433D5E900F04B42 /* RealmLaunchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmLaunchpad.swift; sourceTree = "<group>"; };
+		721688FD2433D62400F04B42 /* RealmLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmLocation.swift; sourceTree = "<group>"; };
+		721689002433D91A00F04B42 /* FillableWithValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillableWithValues.swift; sourceTree = "<group>"; };
+		721689032433DA4000F04B42 /* FetchingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingViewModel.swift; sourceTree = "<group>"; };
+		721689072433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingAndBGCachingViewModel.swift; sourceTree = "<group>"; };
+		721689092433E5D100F04B42 /* RealmThreadWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmThreadWorker.swift; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsVC.swift; sourceTree = "<group>"; };
+		72315E3D243259BC00DC956D /* FetchingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingVC.swift; sourceTree = "<group>"; };
 		72315E42243259C100DC956D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72315E45243259C100DC956D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72315E47243259C100DC956D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,8 +142,8 @@
 		721688B924339FD000F04B42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				721689062433DC7C00F04B42 /* Base */,
 				721688DC2433BF7B00F04B42 /* Cells */,
-				72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */,
 				72315E732432680200DC956D /* Protocols */,
 			);
 			path = View;
@@ -134,7 +152,7 @@
 		721688BA2433A03800F04B42 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */,
+				721689052433DBE400F04B42 /* Base */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -142,6 +160,7 @@
 		721688BD2433AFD100F04B42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				721688EC2433D4FA00F04B42 /* Database Service */,
 				721688E52433C03100F04B42 /* CellMaker */,
 				721688CF2433B9E100F04B42 /* ObjectMapper */,
 				721688C32433B87D00F04B42 /* Network Service */,
@@ -153,6 +172,7 @@
 		721688C22433B86F00F04B42 /* Launchpad */ = {
 			isa = PBXGroup;
 			children = (
+				721688FA2433D5DF00F04B42 /* Realm */,
 				721688BE2433B43400F04B42 /* Location.swift */,
 				721688C02433B5BE00F04B42 /* Launchpad.swift */,
 			);
@@ -284,6 +304,69 @@
 				721688EA2433C09B00F04B42 /* LaunchpadCellMaker.swift */,
 			);
 			path = LaunchpadCellMaker;
+			sourceTree = "<group>";
+		};
+		721688EC2433D4FA00F04B42 /* Database Service */ = {
+			isa = PBXGroup;
+			children = (
+				721688F72433D5A300F04B42 /* RealmDatabaseService */,
+				721688ED2433D50600F04B42 /* Protocols */,
+			);
+			path = "Database Service";
+			sourceTree = "<group>";
+		};
+		721688ED2433D50600F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				721688EE2433D51D00F04B42 /* DatabaseService.swift */,
+				721688F02433D53900F04B42 /* BackgroundWritingDatabaseService.swift */,
+				721688F52433D58B00F04B42 /* RealmBackgroundWriter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		721688F72433D5A300F04B42 /* RealmDatabaseService */ = {
+			isa = PBXGroup;
+			children = (
+				721688F82433D5C100F04B42 /* RealmDatabaseService.swift */,
+				721689092433E5D100F04B42 /* RealmThreadWorker.swift */,
+			);
+			path = RealmDatabaseService;
+			sourceTree = "<group>";
+		};
+		721688FA2433D5DF00F04B42 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				721688FF2433D90800F04B42 /* Protocols */,
+				721688FB2433D5E900F04B42 /* RealmLaunchpad.swift */,
+				721688FD2433D62400F04B42 /* RealmLocation.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		721688FF2433D90800F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				721689002433D91A00F04B42 /* FillableWithValues.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		721689052433DBE400F04B42 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				721689032433DA4000F04B42 /* FetchingViewModel.swift */,
+				721689072433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		721689062433DC7C00F04B42 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				72315E3D243259BC00DC956D /* FetchingVC.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		72315E2D243259BC00DC956D = {
@@ -618,31 +701,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721688FE2433D62400F04B42 /* RealmLocation.swift in Sources */,
 				72315E6E243263E700DC956D /* LaunchpadsModuleFactory.swift in Sources */,
+				721688F62433D58B00F04B42 /* RealmBackgroundWriter.swift in Sources */,
 				721688DB2433BBA100F04B42 /* Initializable.swift in Sources */,
+				721689042433DA4000F04B42 /* FetchingViewModel.swift in Sources */,
 				721688D82433BAD600F04B42 /* LaunchpadMapper.swift in Sources */,
 				72315E8624327BBF00DC956D /* BaseCoordinator.swift in Sources */,
 				721688C12433B5BE00F04B42 /* Launchpad.swift in Sources */,
 				72315E5F24325E9200DC956D /* LaunchpadRouter.swift in Sources */,
 				721688EB2433C09B00F04B42 /* LaunchpadCellMaker.swift in Sources */,
+				721689082433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift in Sources */,
 				721688D52433BA8700F04B42 /* ObjectMapperError.swift in Sources */,
 				72315E812432795100DC956D /* CoordinatorGroup.swift in Sources */,
+				7216890A2433E5D100F04B42 /* RealmThreadWorker.swift in Sources */,
 				72315E70243264DA00DC956D /* ModuleFactory.swift in Sources */,
 				72315E6A243262F700DC956D /* ModuleFactory+LaunchpadsModuleFactory.swift in Sources */,
 				72315E7A2432745400DC956D /* AppRouter.swift in Sources */,
-				72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */,
+				72315E3E243259BC00DC956D /* FetchingVC.swift in Sources */,
 				72315E67243262A400DC956D /* LaunchpadsCoordinator.swift in Sources */,
 				721688CC2433B91D00F04B42 /* NetworkServiceError.swift in Sources */,
 				721688DF2433BF8F00F04B42 /* ConfigurableCell.swift in Sources */,
 				721688D22433BA0100F04B42 /* ObjectsMapper.swift in Sources */,
 				721688E82433C04900F04B42 /* CellMaker.swift in Sources */,
+				721689012433D91A00F04B42 /* FillableWithValues.swift in Sources */,
+				721688F12433D53900F04B42 /* BackgroundWritingDatabaseService.swift in Sources */,
+				721688EF2433D51D00F04B42 /* DatabaseService.swift in Sources */,
 				72315E6124325F4300DC956D /* StackRoutable.swift in Sources */,
 				721688C92433B8EA00F04B42 /* PromiseKitNetworkService.swift in Sources */,
 				72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */,
 				721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */,
 				721688E12433BFA800F04B42 /* CellWithId.swift in Sources */,
+				721688FC2433D5E900F04B42 /* RealmLaunchpad.swift in Sources */,
 				72315E5824325C4100DC956D /* Coordinatable.swift in Sources */,
-				721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */,
 				721688BF2433B43400F04B42 /* Location.swift in Sources */,
 				72315E78243270DC00DC956D /* AppRoutable.swift in Sources */,
 				721688C62433B89A00F04B42 /* NetworkFetchingService.swift in Sources */,
@@ -650,6 +741,7 @@
 				721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */,
 				721688E42433BFCA00F04B42 /* LaunchpadCell.swift in Sources */,
 				72315E7F2432762C00DC956D /* AppCoordinator.swift in Sources */,
+				721688F92433D5C100F04B42 /* RealmDatabaseService.swift in Sources */,
 				72315E6524325FC500DC956D /* Presentable.swift in Sources */,
 				72315E83243279AA00DC956D /* CoordinatorFactory.swift in Sources */,
 				72315E752432680E00DC956D /* DisplayLaunchpadsModule.swift in Sources */,
