@@ -10,6 +10,7 @@
 		721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688B7243398A600F04B42 /* UIWindow+Extensions.swift */; };
 		721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */; };
 		721688BF2433B43400F04B42 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688BE2433B43400F04B42 /* Location.swift */; };
+		721688C12433B5BE00F04B42 /* Launchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688C02433B5BE00F04B42 /* Launchpad.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
 		72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		721688B7243398A600F04B42 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsViewModel.swift; sourceTree = "<group>"; };
 		721688BE2433B43400F04B42 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		721688C02433B5BE00F04B42 /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsVC.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				721688BE2433B43400F04B42 /* Location.swift */,
+				721688C02433B5BE00F04B42 /* Launchpad.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			files = (
 				72315E6E243263E700DC956D /* LaunchpadsModuleFactory.swift in Sources */,
 				72315E8624327BBF00DC956D /* BaseCoordinator.swift in Sources */,
+				721688C12433B5BE00F04B42 /* Launchpad.swift in Sources */,
 				72315E5F24325E9200DC956D /* LaunchpadRouter.swift in Sources */,
 				72315E812432795100DC956D /* CoordinatorGroup.swift in Sources */,
 				72315E70243264DA00DC956D /* ModuleFactory.swift in Sources */,
