@@ -10,8 +10,8 @@ import Foundation
 
 extension ModuleFactory: LaunchpadsModuleFactory {
     func createDisplayLaunchpadsModule(networkService: PromiseKitNetworkService, cellMaker: LaunchpadCellMaker) -> DisplayLaunchpadsModule {
-        let viewModel = DisplayLaunchpadsViewModel<PromiseKitNetworkService, LaunchpadsMapper, Launchpad, LaunchpadCellMaker>(networkService: networkService, cellMaker: cellMaker)
-        return DisplayLaunchpadsVC(viewModel: viewModel)
+        let viewModel = FetchingAndBGCachingViewModel<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, RealmDatabaseService>(databaseService: RealmDatabaseService(), networkService: networkService, cellMaker: cellMaker)
+        return FetchingVC(viewModel: viewModel)
     }
     
     func createLaunchpadDetailsModule() {
