@@ -16,6 +16,14 @@
 		721688CC2433B91D00F04B42 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688CB2433B91D00F04B42 /* NetworkServiceError.swift */; };
 		721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688CD2433B97900F04B42 /* String+Extensions.swift */; };
 		721688D22433BA0100F04B42 /* ObjectsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D12433BA0100F04B42 /* ObjectsMapper.swift */; };
+		721688D52433BA8700F04B42 /* ObjectMapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D42433BA8700F04B42 /* ObjectMapperError.swift */; };
+		721688D82433BAD600F04B42 /* LaunchpadMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D72433BAD600F04B42 /* LaunchpadMapper.swift */; };
+		721688DB2433BBA100F04B42 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688DA2433BBA100F04B42 /* Initializable.swift */; };
+		721688DF2433BF8F00F04B42 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688DE2433BF8F00F04B42 /* ConfigurableCell.swift */; };
+		721688E12433BFA800F04B42 /* CellWithId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688E02433BFA800F04B42 /* CellWithId.swift */; };
+		721688E42433BFCA00F04B42 /* LaunchpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688E32433BFCA00F04B42 /* LaunchpadCell.swift */; };
+		721688E82433C04900F04B42 /* CellMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688E72433C04900F04B42 /* CellMaker.swift */; };
+		721688EB2433C09B00F04B42 /* LaunchpadCellMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688EA2433C09B00F04B42 /* LaunchpadCellMaker.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
 		72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
@@ -50,6 +58,14 @@
 		721688CB2433B91D00F04B42 /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		721688CD2433B97900F04B42 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		721688D12433BA0100F04B42 /* ObjectsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsMapper.swift; sourceTree = "<group>"; };
+		721688D42433BA8700F04B42 /* ObjectMapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperError.swift; sourceTree = "<group>"; };
+		721688D72433BAD600F04B42 /* LaunchpadMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadMapper.swift; sourceTree = "<group>"; };
+		721688DA2433BBA100F04B42 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
+		721688DE2433BF8F00F04B42 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		721688E02433BFA800F04B42 /* CellWithId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithId.swift; sourceTree = "<group>"; };
+		721688E32433BFCA00F04B42 /* LaunchpadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadCell.swift; sourceTree = "<group>"; };
+		721688E72433C04900F04B42 /* CellMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMaker.swift; sourceTree = "<group>"; };
+		721688EA2433C09B00F04B42 /* LaunchpadCellMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadCellMaker.swift; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsVC.swift; sourceTree = "<group>"; };
@@ -108,6 +124,7 @@
 		721688B924339FD000F04B42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				721688DC2433BF7B00F04B42 /* Cells */,
 				72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */,
 				72315E732432680200DC956D /* Protocols */,
 			);
@@ -125,6 +142,7 @@
 		721688BD2433AFD100F04B42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				721688E52433C03100F04B42 /* CellMaker */,
 				721688CF2433B9E100F04B42 /* ObjectMapper */,
 				721688C32433B87D00F04B42 /* Network Service */,
 				721688C22433B86F00F04B42 /* Launchpad */,
@@ -178,6 +196,8 @@
 		721688CF2433B9E100F04B42 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
+				721688D62433BACB00F04B42 /* LaunchpadMapper */,
+				721688D32433BA7C00F04B42 /* Errors */,
 				721688D02433B9F200F04B42 /* Protocols */,
 			);
 			path = ObjectMapper;
@@ -189,6 +209,81 @@
 				721688D12433BA0100F04B42 /* ObjectsMapper.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		721688D32433BA7C00F04B42 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				721688D42433BA8700F04B42 /* ObjectMapperError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		721688D62433BACB00F04B42 /* LaunchpadMapper */ = {
+			isa = PBXGroup;
+			children = (
+				721688D72433BAD600F04B42 /* LaunchpadMapper.swift */,
+			);
+			path = LaunchpadMapper;
+			sourceTree = "<group>";
+		};
+		721688D92433BB9900F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				721688DA2433BBA100F04B42 /* Initializable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		721688DC2433BF7B00F04B42 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				721688E22433BFBE00F04B42 /* LaunchpadCell */,
+				721688DD2433BF8000F04B42 /* Protocols */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		721688DD2433BF8000F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				721688DE2433BF8F00F04B42 /* ConfigurableCell.swift */,
+				721688E02433BFA800F04B42 /* CellWithId.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		721688E22433BFBE00F04B42 /* LaunchpadCell */ = {
+			isa = PBXGroup;
+			children = (
+				721688E32433BFCA00F04B42 /* LaunchpadCell.swift */,
+			);
+			path = LaunchpadCell;
+			sourceTree = "<group>";
+		};
+		721688E52433C03100F04B42 /* CellMaker */ = {
+			isa = PBXGroup;
+			children = (
+				721688E92433C08D00F04B42 /* LaunchpadCellMaker */,
+				721688E62433C03800F04B42 /* Protocols */,
+			);
+			path = CellMaker;
+			sourceTree = "<group>";
+		};
+		721688E62433C03800F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				721688E72433C04900F04B42 /* CellMaker.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		721688E92433C08D00F04B42 /* LaunchpadCellMaker */ = {
+			isa = PBXGroup;
+			children = (
+				721688EA2433C09B00F04B42 /* LaunchpadCellMaker.swift */,
+			);
+			path = LaunchpadCellMaker;
 			sourceTree = "<group>";
 		};
 		72315E2D243259BC00DC956D = {
@@ -284,6 +379,7 @@
 		72315E5424325C2000DC956D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				721688D92433BB9900F04B42 /* Protocols */,
 				72315E6B243263A900DC956D /* ModuleFactories */,
 				72315E6224325F8800DC956D /* Presentable */,
 				72315E5C24325E7600DC956D /* Routers */,
@@ -523,9 +619,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				72315E6E243263E700DC956D /* LaunchpadsModuleFactory.swift in Sources */,
+				721688DB2433BBA100F04B42 /* Initializable.swift in Sources */,
+				721688D82433BAD600F04B42 /* LaunchpadMapper.swift in Sources */,
 				72315E8624327BBF00DC956D /* BaseCoordinator.swift in Sources */,
 				721688C12433B5BE00F04B42 /* Launchpad.swift in Sources */,
 				72315E5F24325E9200DC956D /* LaunchpadRouter.swift in Sources */,
+				721688EB2433C09B00F04B42 /* LaunchpadCellMaker.swift in Sources */,
+				721688D52433BA8700F04B42 /* ObjectMapperError.swift in Sources */,
 				72315E812432795100DC956D /* CoordinatorGroup.swift in Sources */,
 				72315E70243264DA00DC956D /* ModuleFactory.swift in Sources */,
 				72315E6A243262F700DC956D /* ModuleFactory+LaunchpadsModuleFactory.swift in Sources */,
@@ -533,11 +633,14 @@
 				72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */,
 				72315E67243262A400DC956D /* LaunchpadsCoordinator.swift in Sources */,
 				721688CC2433B91D00F04B42 /* NetworkServiceError.swift in Sources */,
+				721688DF2433BF8F00F04B42 /* ConfigurableCell.swift in Sources */,
 				721688D22433BA0100F04B42 /* ObjectsMapper.swift in Sources */,
+				721688E82433C04900F04B42 /* CellMaker.swift in Sources */,
 				72315E6124325F4300DC956D /* StackRoutable.swift in Sources */,
 				721688C92433B8EA00F04B42 /* PromiseKitNetworkService.swift in Sources */,
 				72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */,
 				721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */,
+				721688E12433BFA800F04B42 /* CellWithId.swift in Sources */,
 				72315E5824325C4100DC956D /* Coordinatable.swift in Sources */,
 				721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */,
 				721688BF2433B43400F04B42 /* Location.swift in Sources */,
@@ -545,6 +648,7 @@
 				721688C62433B89A00F04B42 /* NetworkFetchingService.swift in Sources */,
 				72315E722432656800DC956D /* LaunchpadsStorage.swift in Sources */,
 				721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */,
+				721688E42433BFCA00F04B42 /* LaunchpadCell.swift in Sources */,
 				72315E7F2432762C00DC956D /* AppCoordinator.swift in Sources */,
 				72315E6524325FC500DC956D /* Presentable.swift in Sources */,
 				72315E83243279AA00DC956D /* CoordinatorFactory.swift in Sources */,

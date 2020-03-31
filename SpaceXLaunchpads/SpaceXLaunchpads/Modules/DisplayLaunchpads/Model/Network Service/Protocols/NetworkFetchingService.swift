@@ -8,7 +8,7 @@
 
 import PromiseKit
 
-protocol DataFetchingService: class {
+protocol NetworkFetchingService: class {
     
     func fetchData() throws -> Promise<(data: Data, response: URLResponse)>
 }

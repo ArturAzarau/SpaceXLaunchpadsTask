@@ -6,4 +6,7 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
-final class LaunchpadsStorage {}
+final class LaunchpadsStorage {
+    let promiseKitNetworkService = PromiseKitNetworkService(stringURL: .fetchURL)
+    let launchpadCellMaker = LaunchpadCellMaker()
+}

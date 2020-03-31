@@ -18,7 +18,7 @@ final class PromiseKitNetworkService {
     }
 }
 
-extension PromiseKitNetworkService: DataFetchingService {
+extension PromiseKitNetworkService: NetworkFetchingService {
     func fetchData() throws -> Promise<(data: Data, response: URLResponse)> {
         guard let url = URL(string: stringURL) else {
             throw NetworkServiceError.invalidURL

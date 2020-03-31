@@ -33,7 +33,8 @@ final class LaunchpadsCoordinator: BaseCoordinator, LaunchpadsCoordinatorProtoco
     }
     
     private func showDisplayLaunchpadsModule() {
-        let module = moduleFactory.createDisplayLaunchpadsModule()
+        let module = moduleFactory.createDisplayLaunchpadsModule(networkService: storage.promiseKitNetworkService,
+                                                                 cellMaker: storage.launchpadCellMaker)
         router.setRootModule(module, animated: true)
     }
 }

@@ -9,8 +9,9 @@
 import Foundation
 
 extension ModuleFactory: LaunchpadsModuleFactory {
-    func createDisplayLaunchpadsModule() -> DisplayLaunchpadsModule {
-        return DisplayLaunchpadsVC<DisplayLaunchpadsViewModel>(viewModel: .init())
+    func createDisplayLaunchpadsModule(networkService: PromiseKitNetworkService, cellMaker: LaunchpadCellMaker) -> DisplayLaunchpadsModule {
+        let viewModel = DisplayLaunchpadsViewModel<PromiseKitNetworkService, LaunchpadsMapper, Launchpad, LaunchpadCellMaker>(networkService: networkService, cellMaker: cellMaker)
+        return DisplayLaunchpadsVC(viewModel: viewModel)
     }
     
     func createLaunchpadDetailsModule() {

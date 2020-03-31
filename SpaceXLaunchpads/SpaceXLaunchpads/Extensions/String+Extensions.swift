@@ -8,4 +8,6 @@
 
 extension String {
     static let invalidURL = "Invalid URL"
+    static let invalidJSON = "Invalid JSON"
+    static let fetchURL = "https://api.spacexdata.com/v2/launchpads"
 }

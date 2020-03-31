@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ObjectsMapper: class {
+protocol ObjectsMapper: AnyObject, Initializable {
     
     associatedtype ObjectType
     

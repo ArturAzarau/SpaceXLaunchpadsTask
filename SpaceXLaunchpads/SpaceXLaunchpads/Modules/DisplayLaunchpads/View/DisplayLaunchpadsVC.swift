@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class DisplayLaunchpadsVC<ViewModelType>: UITableViewController, DisplayLaunchpadsModule {
+final class DisplayLaunchpadsVC<NetworkServiceType: NetworkFetchingService, MapperType: ObjectsMapper, ModelType, CellMakerType: CellMaker, ViewModelType>: UITableViewController, DisplayLaunchpadsModule where ViewModelType: DisplayLaunchpadsViewModel<NetworkServiceType, MapperType, ModelType, CellMakerType> {
     
     private let viewModel: ViewModelType
     
@@ -23,6 +23,11 @@ final class DisplayLaunchpadsVC<ViewModelType>: UITableViewController, DisplayLa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(CellMakerType.CellType.self,
+                           forCellReuseIdentifier: CellMakerType.CellType.cellIdentifier)
+        viewModel.bind(tableView: tableView)
+        viewModel.fetchData()
     }
 }
 
