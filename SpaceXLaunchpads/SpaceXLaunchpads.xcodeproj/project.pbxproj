@@ -28,9 +28,11 @@
 		72315E812432795100DC956D /* CoordinatorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E802432795100DC956D /* CoordinatorGroup.swift */; };
 		72315E83243279AA00DC956D /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E82243279AA00DC956D /* CoordinatorFactory.swift */; };
 		72315E8624327BBF00DC956D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E8524327BBF00DC956D /* BaseCoordinator.swift */; };
+		BBE28A65F88B65B461B4742B /* Pods_SpaceXLaunchpads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E05A0BE6A5F54ECBB56BCD4 /* Pods-SpaceXLaunchpads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunchpads.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads.debug.xcconfig"; sourceTree = "<group>"; };
 		721688B7243398A600F04B42 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		72315E802432795100DC956D /* CoordinatorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorGroup.swift; sourceTree = "<group>"; };
 		72315E82243279AA00DC956D /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		72315E8524327BBF00DC956D /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		88696B6CD63006A631632761 /* Pods-SpaceXLaunchpads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunchpads.release.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads.release.xcconfig"; sourceTree = "<group>"; };
+		B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXLaunchpads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +65,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE28A65F88B65B461B4742B /* Pods_SpaceXLaunchpads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D8EFDCB355355770A137C20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		721688B62433989100F04B42 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +93,8 @@
 			children = (
 				72315E38243259BC00DC956D /* SpaceXLaunchpads */,
 				72315E37243259BC00DC956D /* Products */,
+				C519A525640E918143D1C336 /* Pods */,
+				0D8EFDCB355355770A137C20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,6 +295,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		C519A525640E918143D1C336 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E05A0BE6A5F54ECBB56BCD4 /* Pods-SpaceXLaunchpads.debug.xcconfig */,
+				88696B6CD63006A631632761 /* Pods-SpaceXLaunchpads.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72315E4A243259C100DC956D /* Build configuration list for PBXNativeTarget "SpaceXLaunchpads" */;
 			buildPhases = (
+				A2CC298B702C184D00CFABE8 /* [CP] Check Pods Manifest.lock */,
 				72315E32243259BC00DC956D /* Sources */,
 				72315E33243259BC00DC956D /* Frameworks */,
 				72315E34243259BC00DC956D /* Resources */,
+				F9AC26FFE63D1B11CBBE2C7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +371,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2CC298B702C184D00CFABE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceXLaunchpads-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AC26FFE63D1B11CBBE2C7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72315E32243259BC00DC956D /* Sources */ = {
@@ -502,6 +571,7 @@
 		};
 		72315E4B243259C100DC956D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E05A0BE6A5F54ECBB56BCD4 /* Pods-SpaceXLaunchpads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +591,7 @@
 		};
 		72315E4C243259C100DC956D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88696B6CD63006A631632761 /* Pods-SpaceXLaunchpads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
