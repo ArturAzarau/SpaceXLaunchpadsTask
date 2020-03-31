@@ -8,8 +8,19 @@
 
 import UIKit
 
-final class DisplayLaunchpadsVC: UIViewController, DisplayLaunchpadsModule {
-
+final class DisplayLaunchpadsVC<ViewModelType>: UITableViewController, DisplayLaunchpadsModule {
+    
+    private let viewModel: ViewModelType
+    
+    init(viewModel: ViewModelType) {
+        self.viewModel = viewModel
+        super.init(style: .plain)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

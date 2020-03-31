@@ -10,7 +10,7 @@ import Foundation
 
 extension ModuleFactory: LaunchpadsModuleFactory {
     func createDisplayLaunchpadsModule() -> DisplayLaunchpadsModule {
-        return ViewController()
+        return DisplayLaunchpadsVC<DisplayLaunchpadsViewModel>(viewModel: .init())
     }
     
     func createLaunchpadDetailsModule() {

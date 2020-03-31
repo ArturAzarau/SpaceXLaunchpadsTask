@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688B7243398A600F04B42 /* UIWindow+Extensions.swift */; };
+		721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
 		72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		0E05A0BE6A5F54ECBB56BCD4 /* Pods-SpaceXLaunchpads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunchpads.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads.debug.xcconfig"; sourceTree = "<group>"; };
 		721688B7243398A600F04B42 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsViewModel.swift; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsVC.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		721688BA2433A03800F04B42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				721688BB2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		72315E2D243259BC00DC956D = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		72315E4E24325A7200DC956D /* DisplayLaunchpads */ = {
 			isa = PBXGroup;
 			children = (
+				721688BA2433A03800F04B42 /* ViewModel */,
 				721688B924339FD000F04B42 /* View */,
 			);
 			path = DisplayLaunchpads;
@@ -438,6 +449,7 @@
 				72315E6124325F4300DC956D /* StackRoutable.swift in Sources */,
 				72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */,
 				72315E5824325C4100DC956D /* Coordinatable.swift in Sources */,
+				721688BC2433A04500F04B42 /* DisplayLaunchpadsViewModel.swift in Sources */,
 				72315E78243270DC00DC956D /* AppRoutable.swift in Sources */,
 				72315E722432656800DC956D /* LaunchpadsStorage.swift in Sources */,
 				721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */,
