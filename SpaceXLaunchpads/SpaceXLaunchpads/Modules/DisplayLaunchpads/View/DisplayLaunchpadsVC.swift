@@ -8,12 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, DisplayLaunchpadsModule {
+final class DisplayLaunchpadsVC: UIViewController, DisplayLaunchpadsModule {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .blue
     }
 }
 

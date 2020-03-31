@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688B7243398A600F04B42 /* UIWindow+Extensions.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
-		72315E3E243259BC00DC956D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* ViewController.swift */; };
+		72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
 		72315E46243259C100DC956D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72315E44243259C100DC956D /* LaunchScreen.storyboard */; };
 		72315E5824325C4100DC956D /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E5724325C4100DC956D /* Coordinatable.swift */; };
@@ -36,7 +36,7 @@
 		721688B7243398A600F04B42 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72315E3D243259BC00DC956D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLaunchpadsVC.swift; sourceTree = "<group>"; };
 		72315E42243259C100DC956D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72315E45243259C100DC956D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72315E47243259C100DC956D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +88,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		721688B924339FD000F04B42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72315E3D243259BC00DC956D /* DisplayLaunchpadsVC.swift */,
+				72315E732432680200DC956D /* Protocols */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		72315E2D243259BC00DC956D = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +140,7 @@
 		72315E4E24325A7200DC956D /* DisplayLaunchpads */ = {
 			isa = PBXGroup;
 			children = (
-				72315E732432680200DC956D /* Protocols */,
-				72315E3D243259BC00DC956D /* ViewController.swift */,
+				721688B924339FD000F04B42 /* View */,
 			);
 			path = DisplayLaunchpads;
 			sourceTree = "<group>";
@@ -301,7 +309,6 @@
 				0E05A0BE6A5F54ECBB56BCD4 /* Pods-SpaceXLaunchpads.debug.xcconfig */,
 				88696B6CD63006A631632761 /* Pods-SpaceXLaunchpads.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -426,7 +433,7 @@
 				72315E70243264DA00DC956D /* ModuleFactory.swift in Sources */,
 				72315E6A243262F700DC956D /* ModuleFactory+LaunchpadsModuleFactory.swift in Sources */,
 				72315E7A2432745400DC956D /* AppRouter.swift in Sources */,
-				72315E3E243259BC00DC956D /* ViewController.swift in Sources */,
+				72315E3E243259BC00DC956D /* DisplayLaunchpadsVC.swift in Sources */,
 				72315E67243262A400DC956D /* LaunchpadsCoordinator.swift in Sources */,
 				72315E6124325F4300DC956D /* StackRoutable.swift in Sources */,
 				72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */,

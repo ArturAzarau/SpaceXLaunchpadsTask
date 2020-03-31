@@ -6,6 +6,4 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
-protocol DisplayLaunchpadsModule: Presentable {
-    
-}
+protocol DisplayLaunchpadsModule: Presentable {}
