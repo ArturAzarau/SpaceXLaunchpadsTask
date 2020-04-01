@@ -9,8 +9,9 @@
 import Foundation
 
 protocol LaunchpadsModuleFactory {
+    
     func createDisplayLaunchpadsModule(networkService: PromiseKitNetworkService,
                                        cellMaker: LaunchpadCellMaker) -> DisplayLaunchpadsModule
-    func createLaunchpadDetailsModule()
+    func createLaunchpadDetailsModule(with launchpad: Launchpad) -> Presentable
     func createErrorAlertModule(with title: String, and message: String) -> Presentable
 }

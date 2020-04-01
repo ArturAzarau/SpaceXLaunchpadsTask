@@ -40,6 +40,13 @@ final class LaunchpadsCoordinator: BaseCoordinator, LaunchpadsCoordinatorProtoco
         let module = moduleFactory.createDisplayLaunchpadsModule(networkService: storage.promiseKitNetworkService,
                                                                  cellMaker: storage.launchpadCellMaker)
         module.onError = onError
+        module.onItemSelected = { [weak self] in
+            guard let self = self else {
+                return
+            }
+            let module = self.moduleFactory.createLaunchpadDetailsModule(with: $0)
+            self.router.pushModule(module, animated: true)
+        }
         router.setRootModule(module, animated: true)
     }
 }

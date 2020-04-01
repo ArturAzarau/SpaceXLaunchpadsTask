@@ -7,5 +7,7 @@
 //
 
 protocol DisplayLaunchpadsModule: Presentable {
+    
     var onError: ParameterClosure<Error>? { get set }
+    var onItemSelected: ParameterClosure<Launchpad>? { get set }
 }

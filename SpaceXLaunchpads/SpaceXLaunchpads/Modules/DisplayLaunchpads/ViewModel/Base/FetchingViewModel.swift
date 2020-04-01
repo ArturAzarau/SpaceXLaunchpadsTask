@@ -19,10 +19,18 @@ where MapperType.ObjectType == ModelType, CellMakerType.ModelType == ModelType {
     
     private let disposeBag = DisposeBag()
     let errorSubject = Subject<Error, Never>()
+    let selectedItemSubject = Subject<ModelType, Never>()
     
     func observeErrors(with action: @escaping (Error) -> ()) {
         errorSubject.observeNext { error in
             action(error)
+        }
+        .dispose(in: disposeBag)
+    }
+    
+    func observeSelectedItem(with action: @escaping (ModelType) -> ()) {
+        selectedItemSubject.observeNext {
+            action($0)
         }
         .dispose(in: disposeBag)
     }
@@ -51,6 +59,10 @@ where MapperType.ObjectType == ModelType, CellMakerType.ModelType == ModelType {
         }.catch { [weak errorSubject] in
             errorSubject?.on(.next($0))
         }
+    }
+    
+    func item(for indexPath: IndexPath) {
+        selectedItemSubject.on(.next(models.value[indexPath.row]))
     }
     
     
