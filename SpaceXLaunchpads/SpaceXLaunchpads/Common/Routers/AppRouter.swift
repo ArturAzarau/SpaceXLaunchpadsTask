@@ -49,3 +49,5 @@ final class AppRouter: AppRoutable {
         window.isHidden = true
     }
 }
+
+extension AppRouter: ModalRoutable {}

@@ -8,9 +8,13 @@
 
 import Foundation
 
-protocol LaunchpadsCoordinatorProtocol: Coordinatable {}
+protocol LaunchpadsCoordinatorProtocol: Coordinatable {
+    var onError: ParameterClosure<Error>? { get set }
+}
 
 final class LaunchpadsCoordinator: BaseCoordinator, LaunchpadsCoordinatorProtocol {
+    
+    var onError: ParameterClosure<Error>?
     
     // MARK: - Coordinatable
         
@@ -35,6 +39,7 @@ final class LaunchpadsCoordinator: BaseCoordinator, LaunchpadsCoordinatorProtoco
     private func showDisplayLaunchpadsModule() {
         let module = moduleFactory.createDisplayLaunchpadsModule(networkService: storage.promiseKitNetworkService,
                                                                  cellMaker: storage.launchpadCellMaker)
+        module.onError = onError
         router.setRootModule(module, animated: true)
     }
 }

@@ -15,9 +15,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         let router = AppRouter()
         let coordinatorFactory = CoordinatorFactory()
         let storage = LaunchpadsStorage()
+        let moduleFactory = ModuleFactory()
         return .init(coordinatorFactory: coordinatorFactory,
                      router: router,
-                     storage: storage)
+                     storage: storage,
+                     moduleFactory: moduleFactory)
     }()
 
     var window: UIWindow?

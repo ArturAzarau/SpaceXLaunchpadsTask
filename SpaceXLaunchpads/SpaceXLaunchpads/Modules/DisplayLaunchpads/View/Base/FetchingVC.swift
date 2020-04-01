@@ -10,6 +10,8 @@ import UIKit
 
 class FetchingVC<MapperType: ObjectsMapper, ModelType, CellMakerType: CellMaker, ViewModelType>: UITableViewController, DisplayLaunchpadsModule where ViewModelType: FetchingViewModel<MapperType, ModelType, CellMakerType> {
     
+    var onError: ParameterClosure<Error>?
+    
     private let viewModel: ViewModelType
     
     init(viewModel: ViewModelType) {
@@ -23,11 +25,29 @@ class FetchingVC<MapperType: ObjectsMapper, ModelType, CellMakerType: CellMaker,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.register(CellMakerType.CellType.self,
-                           forCellReuseIdentifier: CellMakerType.CellType.cellIdentifier)
+        configureTableView()
+        bindTableView()
+        bindErrors()
+        startFetching()
+    }
+    
+    func bindErrors() {
+        viewModel.observeErrors { [weak self] in
+            self?.onError?($0)
+        }
+    }
+    
+    func bindTableView() {
         viewModel.bind(tableView: tableView)
+    }
+    
+    func startFetching() {
         viewModel.startFetching()
     }
+    
+    func configureTableView() {
+        tableView.tableFooterView = .init()
+        tableView.register(CellMakerType.CellType.self,
+                           forCellReuseIdentifier: CellMakerType.CellType.cellIdentifier)
+    }
 }
-

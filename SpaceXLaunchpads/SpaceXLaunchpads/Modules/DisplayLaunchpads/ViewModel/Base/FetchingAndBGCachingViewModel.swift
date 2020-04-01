@@ -30,5 +30,4 @@ class FetchingAndBGCachingViewModel<MapperType: ObjectsMapper, ModelType, CellMa
         
         fetchData()
     }
-    
 }

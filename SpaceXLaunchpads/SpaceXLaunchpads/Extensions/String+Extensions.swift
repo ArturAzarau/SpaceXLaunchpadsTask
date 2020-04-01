@@ -11,4 +11,6 @@ extension String {
     static let invalidJSON = "Invalid JSON"
     static let fetchURL = "https://api.spacexdata.com/v2/launchpads"
     static let empty = ""
+    static let ok = "Ok"
+    static let error = "Error"
 }

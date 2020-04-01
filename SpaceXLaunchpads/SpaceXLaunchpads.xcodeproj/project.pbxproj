@@ -33,6 +33,8 @@
 		721689042433DA4000F04B42 /* FetchingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721689032433DA4000F04B42 /* FetchingViewModel.swift */; };
 		721689082433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721689072433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift */; };
 		7216890A2433E5D100F04B42 /* RealmThreadWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721689092433E5D100F04B42 /* RealmThreadWorker.swift */; };
+		7216890C2434115F00F04B42 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216890B2434115F00F04B42 /* UIAlertController+Extensions.swift */; };
+		72168911243414C700F04B42 /* ModalRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72168910243414C700F04B42 /* ModalRoutable.swift */; };
 		72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E39243259BC00DC956D /* AppDelegate.swift */; };
 		72315E3E243259BC00DC956D /* FetchingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E3D243259BC00DC956D /* FetchingVC.swift */; };
 		72315E43243259C100DC956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72315E42243259C100DC956D /* Assets.xcassets */; };
@@ -84,6 +86,8 @@
 		721689032433DA4000F04B42 /* FetchingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingViewModel.swift; sourceTree = "<group>"; };
 		721689072433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingAndBGCachingViewModel.swift; sourceTree = "<group>"; };
 		721689092433E5D100F04B42 /* RealmThreadWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmThreadWorker.swift; sourceTree = "<group>"; };
+		7216890B2434115F00F04B42 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		72168910243414C700F04B42 /* ModalRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRoutable.swift; sourceTree = "<group>"; };
 		72315E36243259BC00DC956D /* SpaceXLaunchpads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunchpads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72315E39243259BC00DC956D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72315E3D243259BC00DC956D /* FetchingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingVC.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				721688B7243398A600F04B42 /* UIWindow+Extensions.swift */,
 				721688CD2433B97900F04B42 /* String+Extensions.swift */,
+				7216890B2434115F00F04B42 /* UIAlertController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,6 +374,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		7216890D2434135400F04B42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		72315E2D243259BC00DC956D = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +519,7 @@
 			children = (
 				72315E6024325F4300DC956D /* StackRoutable.swift */,
 				72315E77243270DC00DC956D /* AppRoutable.swift */,
+				72168910243414C700F04B42 /* ModalRoutable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -565,6 +578,7 @@
 		72315E7D2432762200DC956D /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				7216890D2434135400F04B42 /* Protocols */,
 				72315E7E2432762C00DC956D /* AppCoordinator.swift */,
 			);
 			path = AppCoordinator;
@@ -726,6 +740,7 @@
 				721688E82433C04900F04B42 /* CellMaker.swift in Sources */,
 				721689012433D91A00F04B42 /* FillableWithValues.swift in Sources */,
 				721688F12433D53900F04B42 /* BackgroundWritingDatabaseService.swift in Sources */,
+				7216890C2434115F00F04B42 /* UIAlertController+Extensions.swift in Sources */,
 				721688EF2433D51D00F04B42 /* DatabaseService.swift in Sources */,
 				72315E6124325F4300DC956D /* StackRoutable.swift in Sources */,
 				721688C92433B8EA00F04B42 /* PromiseKitNetworkService.swift in Sources */,
@@ -745,6 +760,7 @@
 				72315E6524325FC500DC956D /* Presentable.swift in Sources */,
 				72315E83243279AA00DC956D /* CoordinatorFactory.swift in Sources */,
 				72315E752432680E00DC956D /* DisplayLaunchpadsModule.swift in Sources */,
+				72168911243414C700F04B42 /* ModalRoutable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

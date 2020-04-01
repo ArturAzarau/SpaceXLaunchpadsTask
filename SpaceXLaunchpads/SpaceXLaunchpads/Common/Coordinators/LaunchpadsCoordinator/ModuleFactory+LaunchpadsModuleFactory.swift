@@ -6,7 +6,7 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension ModuleFactory: LaunchpadsModuleFactory {
     func createDisplayLaunchpadsModule(networkService: PromiseKitNetworkService, cellMaker: LaunchpadCellMaker) -> DisplayLaunchpadsModule {
