@@ -11,7 +11,5 @@ protocol DatabaseService: class {
     associatedtype Object
     
     func fetchData() -> [Object]
-    func write(data: [Object]) throws
-    func deleteAll() throws
 }
 

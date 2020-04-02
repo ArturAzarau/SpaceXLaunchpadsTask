@@ -6,7 +6,6 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
-import Foundation
 import RealmSwift
 
 final class RealmThreadWorker: NSObject, RealmBackgroundWriter {

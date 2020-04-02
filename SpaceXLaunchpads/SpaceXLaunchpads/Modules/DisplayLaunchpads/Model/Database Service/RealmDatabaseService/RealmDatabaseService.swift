@@ -21,18 +21,6 @@ extension RealmDatabaseService: DatabaseService {
     func fetchData() -> [RealmLaunchpad] {
         return Array(realm.objects(RealmLaunchpad.self))
     }
-    
-    func write(data: [RealmLaunchpad]) throws {
-        try realm.write {
-            realm.add(data)
-        }
-    }
-    
-    func deleteAll() throws {
-        try realm.write {
-            realm.deleteAll()
-        }
-    }
 }
 
 extension RealmDatabaseService: BackgroundWritingDatabaseService {
