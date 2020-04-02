@@ -22,8 +22,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
                      moduleFactory: moduleFactory)
     }()
 
-    var window: UIWindow?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         coordinator.start()
@@ -31,4 +29,3 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-
