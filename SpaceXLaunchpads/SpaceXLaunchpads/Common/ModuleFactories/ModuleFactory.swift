@@ -8,7 +8,9 @@
 
 import UIKit
 
-final class ModuleFactory {
+final class ModuleFactory {}
+
+extension ModuleFactory: ApplicationModuleFactory {
     func createErrorAlertModule(with title: String, and message: String) -> Presentable {
         return UIAlertController.infoAlert(with: title, and: message)
     }

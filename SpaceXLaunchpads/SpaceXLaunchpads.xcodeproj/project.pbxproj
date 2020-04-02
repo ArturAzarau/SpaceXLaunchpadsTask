@@ -65,6 +65,7 @@
 		724760D324369F1A0010391E /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D224369F1A0010391E /* ConfigurableView.swift */; };
 		724760D524369F570010391E /* BaseInitializableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D424369F570010391E /* BaseInitializableView.swift */; };
 		724760D724369FF00010391E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D624369FF00010391E /* UIView+Extensions.swift */; };
+		724760D92436AEF10010391E /* ApplicationModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D82436AEF10010391E /* ApplicationModuleFactory.swift */; };
 		BBE28A65F88B65B461B4742B /* Pods_SpaceXLaunchpads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +131,7 @@
 		724760D224369F1A0010391E /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		724760D424369F570010391E /* BaseInitializableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInitializableView.swift; sourceTree = "<group>"; };
 		724760D624369FF00010391E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		724760D82436AEF10010391E /* ApplicationModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModuleFactory.swift; sourceTree = "<group>"; };
 		88696B6CD63006A631632761 /* Pods-SpaceXLaunchpads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunchpads.release.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads.release.xcconfig"; sourceTree = "<group>"; };
 		B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXLaunchpads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -615,6 +617,7 @@
 			isa = PBXGroup;
 			children = (
 				72315E6D243263E700DC956D /* LaunchpadsModuleFactory.swift */,
+				724760D82436AEF10010391E /* ApplicationModuleFactory.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -823,6 +826,7 @@
 				721688C92433B8EA00F04B42 /* PromiseKitNetworkService.swift in Sources */,
 				72315E3A243259BC00DC956D /* AppDelegate.swift in Sources */,
 				7216891A2434192A00F04B42 /* LaunchpadDetailsViewModel.swift in Sources */,
+				724760D92436AEF10010391E /* ApplicationModuleFactory.swift in Sources */,
 				721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */,
 				721688E12433BFA800F04B42 /* CellWithId.swift in Sources */,
 				721688FC2433D5E900F04B42 /* RealmLaunchpad.swift in Sources */,

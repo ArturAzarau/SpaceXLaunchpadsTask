@@ -19,7 +19,7 @@ final class AppCoordinator: BaseCoordinator {
     private let coordinatorFactory: CoordinatorFactory
     private let router: AppRouter
     private let storage: LaunchpadsStorage
-    private let moduleFactory: ModuleFactory
+    private let moduleFactory: ApplicationModuleFactory & LaunchpadsModuleFactory
     
     // MARK: - Init
     
