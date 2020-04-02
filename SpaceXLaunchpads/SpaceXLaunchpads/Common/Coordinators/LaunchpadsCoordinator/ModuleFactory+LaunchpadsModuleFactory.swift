@@ -9,7 +9,7 @@
 import UIKit
 
 extension ModuleFactory: LaunchpadsModuleFactory {
-    func createLaunchpadDetailsModule(with launchpad: Launchpad) -> Presentable {
+    func createLaunchpadDetailsModule(with launchpad: Launchpad) -> LaunchpadDetailsModule {
         let viewModel = LaunchpadDetailsViewModel(launchpad: launchpad)
         return LaunchpadDetailsVC(viewModel: viewModel)
     }

@@ -6,11 +6,9 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
-import Foundation
-
 protocol LaunchpadsModuleFactory {
     
     func createDisplayLaunchpadsModule(networkService: PromiseKitNetworkService,
                                        cellMaker: LaunchpadCellMaker) -> DisplayLaunchpadsModule
-    func createLaunchpadDetailsModule(with launchpad: Launchpad) -> Presentable
+    func createLaunchpadDetailsModule(with launchpad: Launchpad) -> LaunchpadDetailsModule
 }
