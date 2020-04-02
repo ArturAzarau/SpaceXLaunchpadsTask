@@ -59,6 +59,12 @@
 		72315E812432795100DC956D /* CoordinatorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E802432795100DC956D /* CoordinatorGroup.swift */; };
 		72315E83243279AA00DC956D /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E82243279AA00DC956D /* CoordinatorFactory.swift */; };
 		72315E8624327BBF00DC956D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72315E8524327BBF00DC956D /* BaseCoordinator.swift */; };
+		724760CC24369DA90010391E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760CB24369DA90010391E /* BaseViewController.swift */; };
+		724760CE24369DF30010391E /* LaunchpadDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760CD24369DF30010391E /* LaunchpadDetailsView.swift */; };
+		724760D124369E520010391E /* InitializableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D024369E520010391E /* InitializableView.swift */; };
+		724760D324369F1A0010391E /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D224369F1A0010391E /* ConfigurableView.swift */; };
+		724760D524369F570010391E /* BaseInitializableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D424369F570010391E /* BaseInitializableView.swift */; };
+		724760D724369FF00010391E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D624369FF00010391E /* UIView+Extensions.swift */; };
 		BBE28A65F88B65B461B4742B /* Pods_SpaceXLaunchpads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +124,12 @@
 		72315E802432795100DC956D /* CoordinatorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorGroup.swift; sourceTree = "<group>"; };
 		72315E82243279AA00DC956D /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		72315E8524327BBF00DC956D /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		724760CB24369DA90010391E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		724760CD24369DF30010391E /* LaunchpadDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadDetailsView.swift; sourceTree = "<group>"; };
+		724760D024369E520010391E /* InitializableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializableView.swift; sourceTree = "<group>"; };
+		724760D224369F1A0010391E /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		724760D424369F570010391E /* BaseInitializableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInitializableView.swift; sourceTree = "<group>"; };
+		724760D624369FF00010391E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		88696B6CD63006A631632761 /* Pods-SpaceXLaunchpads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunchpads.release.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads.release.xcconfig"; sourceTree = "<group>"; };
 		B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXLaunchpads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +160,7 @@
 				721688B7243398A600F04B42 /* UIWindow+Extensions.swift */,
 				721688CD2433B97900F04B42 /* String+Extensions.swift */,
 				7216890B2434115F00F04B42 /* UIAlertController+Extensions.swift */,
+				724760D624369FF00010391E /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -393,7 +406,10 @@
 		72168912243418B500F04B42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				724760CF24369E460010391E /* Protocols */,
+				724760CA24369D960010391E /* Base */,
 				721689172434190400F04B42 /* LaunchpadDetailsVC.swift */,
+				724760CD24369DF30010391E /* LaunchpadDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -628,6 +644,24 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		724760CA24369D960010391E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				724760CB24369DA90010391E /* BaseViewController.swift */,
+				724760D424369F570010391E /* BaseInitializableView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		724760CF24369E460010391E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				724760D024369E520010391E /* InitializableView.swift */,
+				724760D224369F1A0010391E /* ConfigurableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		C519A525640E918143D1C336 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +787,7 @@
 			files = (
 				72168916243418E800F04B42 /* LaunchpadDetailsModule.swift in Sources */,
 				721688FE2433D62400F04B42 /* RealmLocation.swift in Sources */,
+				724760CE24369DF30010391E /* LaunchpadDetailsView.swift in Sources */,
 				72315E6E243263E700DC956D /* LaunchpadsModuleFactory.swift in Sources */,
 				721688F62433D58B00F04B42 /* RealmBackgroundWriter.swift in Sources */,
 				721688DB2433BBA100F04B42 /* Initializable.swift in Sources */,
@@ -764,11 +799,14 @@
 				721688EB2433C09B00F04B42 /* LaunchpadCellMaker.swift in Sources */,
 				721689082433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift in Sources */,
 				721688D52433BA8700F04B42 /* ObjectMapperError.swift in Sources */,
+				724760D724369FF00010391E /* UIView+Extensions.swift in Sources */,
 				72315E812432795100DC956D /* CoordinatorGroup.swift in Sources */,
 				7216891C24341D7800F04B42 /* DisplayLaucnhpadsVC.swift in Sources */,
 				7216890A2433E5D100F04B42 /* RealmThreadWorker.swift in Sources */,
 				72315E70243264DA00DC956D /* ModuleFactory.swift in Sources */,
+				724760D524369F570010391E /* BaseInitializableView.swift in Sources */,
 				72315E6A243262F700DC956D /* ModuleFactory+LaunchpadsModuleFactory.swift in Sources */,
+				724760D124369E520010391E /* InitializableView.swift in Sources */,
 				72315E7A2432745400DC956D /* AppRouter.swift in Sources */,
 				721689182434190400F04B42 /* LaunchpadDetailsVC.swift in Sources */,
 				72315E3E243259BC00DC956D /* FetchingVC.swift in Sources */,
@@ -788,10 +826,12 @@
 				721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */,
 				721688E12433BFA800F04B42 /* CellWithId.swift in Sources */,
 				721688FC2433D5E900F04B42 /* RealmLaunchpad.swift in Sources */,
+				724760D324369F1A0010391E /* ConfigurableView.swift in Sources */,
 				72315E5824325C4100DC956D /* Coordinatable.swift in Sources */,
 				721688BF2433B43400F04B42 /* Location.swift in Sources */,
 				72315E78243270DC00DC956D /* AppRoutable.swift in Sources */,
 				721688C62433B89A00F04B42 /* NetworkFetchingService.swift in Sources */,
+				724760CC24369DA90010391E /* BaseViewController.swift in Sources */,
 				72315E722432656800DC956D /* LaunchpadsStorage.swift in Sources */,
 				721688B8243398A600F04B42 /* UIWindow+Extensions.swift in Sources */,
 				721688E42433BFCA00F04B42 /* LaunchpadCell.swift in Sources */,

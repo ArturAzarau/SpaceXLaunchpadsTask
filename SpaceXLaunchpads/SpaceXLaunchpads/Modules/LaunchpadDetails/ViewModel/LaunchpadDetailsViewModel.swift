@@ -8,7 +8,7 @@
 
 struct LaunchpadDetailsViewModel {
     
-    private let launchpad: Launchpad
+    let launchpad: Launchpad
     
     init(launchpad: Launchpad) {
         self.launchpad = launchpad

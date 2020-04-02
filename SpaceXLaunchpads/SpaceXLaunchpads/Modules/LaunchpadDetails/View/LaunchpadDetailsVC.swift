@@ -8,16 +8,14 @@
 
 import UIKit
 
-final class LaunchpadDetailsVC: UIViewController, LaunchpadDetailsModule {
+final class LaunchpadDetailsVC: BaseViewController<LaunchpadDetailsView, LaunchpadDetailsViewModel>, LaunchpadDetailsModule {
     
-    private let viewModel: LaunchpadDetailsViewModel
-    
-    init(viewModel: LaunchpadDetailsViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = viewModel.launchpad.fullName
+        edgesForExtendedLayout = []
+        customView.configure(with: viewModel.launchpad)
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 }
