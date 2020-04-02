@@ -27,27 +27,6 @@ final class AppRouter: AppRoutable {
         let window = UIWindow(level: level)
         self.init(window: window)
     }
-    
-    func openWindow(withModule presentable: Presentable, level: UIWindow.Level.LaunchpadsLevel) {
-        let window = windows[level] ?? UIWindow(level: level)
-        windows[level] = window
-
-        if !window.isKeyWindow {
-            window.makeKeyAndVisible()
-        }
-        window.rootViewController = presentable.toPresent()
-    }
-    
-    func closeWindow(level: UIWindow.Level.LaunchpadsLevel = .normal) {
-        guard let window = windows[level] else {
-            return
-        }
-
-        windows[level] = nil
-        window.rootViewController?.view.isUserInteractionEnabled = false
-        window.rootViewController = nil
-        window.isHidden = true
-    }
 }
 
 extension AppRouter: ModalRoutable {}

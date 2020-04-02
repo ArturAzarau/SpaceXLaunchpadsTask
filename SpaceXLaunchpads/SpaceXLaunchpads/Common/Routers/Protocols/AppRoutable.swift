@@ -13,9 +13,6 @@ protocol AppRoutable {
     
     func setWindowRoot(module: Presentable)
     func makeWindowKeyAndVisible()
-    
-    func openWindow(withModule presentable: Presentable, level: UIWindow.Level.LaunchpadsLevel)
-    func closeWindow(level: UIWindow.Level.LaunchpadsLevel)
 }
 
 extension AppRoutable {
