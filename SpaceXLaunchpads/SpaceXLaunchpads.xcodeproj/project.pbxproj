@@ -398,13 +398,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		7216890D2434135400F04B42 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		72168912243418B500F04B42 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,7 +626,6 @@
 		72315E7D2432762200DC956D /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				7216890D2434135400F04B42 /* Protocols */,
 				72315E7E2432762C00DC956D /* AppCoordinator.swift */,
 			);
 			path = AppCoordinator;
