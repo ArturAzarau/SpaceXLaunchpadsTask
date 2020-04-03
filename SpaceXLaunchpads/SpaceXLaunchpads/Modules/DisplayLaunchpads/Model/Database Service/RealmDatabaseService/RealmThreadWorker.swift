@@ -57,9 +57,8 @@ final class RealmThreadWorker: NSObject, RealmBackgroundWriter {
         while thread != nil, !thread.isCancelled {
             RunLoop.current.run(
                 mode: RunLoop.Mode.default,
-                before: Date.distantPast)
+                before: Date.distantFuture)
         }
     }
-    
 }
 
