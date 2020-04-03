@@ -8,4 +8,5 @@
 
 protocol ApplicationModuleFactory {
     func createErrorAlertModule(with title: String, and message: String) -> Presentable
+    func createLoadingScreenModule() -> Presentable
 }

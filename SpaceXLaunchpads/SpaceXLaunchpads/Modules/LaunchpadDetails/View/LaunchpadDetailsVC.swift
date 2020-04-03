@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LaunchpadDetailsVC: BaseViewController<LaunchpadDetailsView, LaunchpadDetailsViewModel>, LaunchpadDetailsModule {
+final class LaunchpadDetailsVC: BaseViewControllerWithViewModel<LaunchpadDetailsView, LaunchpadDetailsViewModel>, LaunchpadDetailsModule {
     
     override func viewDidLoad() {
         super.viewDidLoad()

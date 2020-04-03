@@ -18,4 +18,8 @@ extension ModuleFactory: LaunchpadsModuleFactory {
         let viewModel = FetchingAndBGCachingViewModel<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, RealmDatabaseService>(databaseService: RealmDatabaseService(), networkService: networkService, cellMaker: cellMaker)
         return DisplayLaunchpadsVC(viewModel: viewModel)
     }
+    
+    func createLoadingScreenModule() -> Presentable {
+        return LoadingScreenViewController()
+    }
 }

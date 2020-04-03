@@ -6,6 +6,8 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
+import UIKit
+
 protocol LaunchpadsModuleFactory {
     
     func createDisplayLaunchpadsModule(networkService: PromiseKitNetworkService,

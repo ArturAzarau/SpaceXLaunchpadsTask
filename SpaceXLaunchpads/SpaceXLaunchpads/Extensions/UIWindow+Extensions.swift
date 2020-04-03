@@ -11,8 +11,7 @@ import UIKit
 extension UIWindow.Level {
     enum LaunchpadsLevel: Int {
         case normal = 0
-        case alert
-        case error
+        case loading
         
         var value: UIWindow.Level {
             return UIWindow.Level.normal + CGFloat(rawValue)

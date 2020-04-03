@@ -10,11 +10,13 @@ import Foundation
 
 protocol LaunchpadsCoordinatorProtocol: Coordinatable {
     var onError: ParameterClosure<Error>? { get set }
+    var onLoading: ParameterClosure<Bool>? { get set }
 }
 
 final class LaunchpadsCoordinator: BaseCoordinator, LaunchpadsCoordinatorProtocol {
     
     var onError: ParameterClosure<Error>?
+    var onLoading: ParameterClosure<Bool>?
     
     // MARK: - Coordinatable
         
@@ -40,6 +42,8 @@ final class LaunchpadsCoordinator: BaseCoordinator, LaunchpadsCoordinatorProtoco
         let module = moduleFactory.createDisplayLaunchpadsModule(networkService: storage.promiseKitNetworkService,
                                                                  cellMaker: storage.launchpadCellMaker)
         module.onError = onError
+        module.onLoading = onLoading
+        
         module.onItemSelected = { [weak self] in
             guard let self = self else {
                 return

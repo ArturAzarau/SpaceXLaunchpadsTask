@@ -20,6 +20,7 @@ where MapperType.ObjectType == ModelType, CellMakerType.ModelType == ModelType {
     private let disposeBag = DisposeBag()
     let errorSubject = Subject<Error, Never>()
     let selectedItemSubject = Subject<ModelType, Never>()
+    let loadingObservable = Observable<Bool>(true)
     
     func observeErrors(with action: @escaping (Error) -> ()) {
         errorSubject.observeNext { error in
@@ -44,6 +45,13 @@ where MapperType.ObjectType == ModelType, CellMakerType.ModelType == ModelType {
         models.bind(to: tableView, using: cellMaker.createCell()).dispose(in: disposeBag)
     }
     
+    func observeLoadingState(with action: @escaping (Bool) -> ()) {
+        loadingObservable.observeNext {
+            action($0)
+        }
+        .dispose(in: disposeBag)
+    }
+    
     func startFetching() {
         fetchData()
     }
@@ -54,10 +62,12 @@ where MapperType.ObjectType == ModelType, CellMakerType.ModelType == ModelType {
         }.compactMap(on: .global(qos: .userInitiated), flags: nil) { data, _  -> [ModelType]? in
             let mapper = MapperType()
             return try? mapper.mapObjects(from: data)
-        }.done { [weak self] in
+        }.done { [weak self, weak loadingObservable] in
             self?.proceed(newModels: $0)
-        }.catch { [weak errorSubject] in
+            loadingObservable?.on(.next(false))
+        }.catch { [weak errorSubject, weak loadingObservable] in
             errorSubject?.on(.next($0))
+            loadingObservable?.on(.next(false))
         }
     }
     

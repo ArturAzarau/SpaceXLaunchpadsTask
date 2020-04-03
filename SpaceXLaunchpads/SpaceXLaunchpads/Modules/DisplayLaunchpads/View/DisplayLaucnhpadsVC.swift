@@ -10,12 +10,14 @@ import UIKit
 
 final class DisplayLaunchpadsVC: FetchingVC<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, FetchingAndBGCachingViewModel<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, RealmDatabaseService>>, DisplayLaunchpadsModule {
     
+    var onLoading: ParameterClosure<Bool>?
     var onItemSelected: ParameterClosure<Launchpad>?
     var onError: ParameterClosure<Error>?
     
     override func bindAll() {
         super.bindAll()
         
+        bindLoadingState()
         bindErrors()
         bindSelectedItem()
     }
@@ -29,6 +31,12 @@ final class DisplayLaunchpadsVC: FetchingVC<LaunchpadsMapper, Launchpad, Launchp
     func bindSelectedItem() {
         viewModel.observeSelectedItem { [weak self] in
             self?.onItemSelected?($0)
+        }
+    }
+    
+    func bindLoadingState() {
+        viewModel.observeLoadingState { [weak self] in
+            self?.onLoading?($0)
         }
     }
     

@@ -20,5 +20,4 @@ extension Presentable where Self: UIViewController {
     }
 }
 
-extension UINavigationController: Presentable {}
-extension UIAlertController: Presentable {}
+extension UIViewController: Presentable {}
