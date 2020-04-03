@@ -43,12 +43,12 @@ final class AppCoordinator: BaseCoordinator {
             guard let self = self else {
                 return
             }
-            if isLoading {
-                let module = self.moduleFactory.createLoadingScreenModule()
-                self.router.openWindow(withModule: module, level: .loading)
-            } else {
-                self.router.closeWindow(level: .loading)
-            }
+            
+            isLoading
+                ? self.router.openWindow(withModule: self.moduleFactory.createLoadingScreenModule(),
+                                         level: .loading)
+                : self.router.closeWindow(level: .loading)
+            
         }
         router.setWindowRoot(module: module.presentable)
         bindTo(module.coordinator).start()
