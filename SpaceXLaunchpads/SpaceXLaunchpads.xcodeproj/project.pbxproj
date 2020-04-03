@@ -16,7 +16,7 @@
 		721688CE2433B97900F04B42 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688CD2433B97900F04B42 /* String+Extensions.swift */; };
 		721688D22433BA0100F04B42 /* ObjectsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D12433BA0100F04B42 /* ObjectsMapper.swift */; };
 		721688D52433BA8700F04B42 /* ObjectMapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D42433BA8700F04B42 /* ObjectMapperError.swift */; };
-		721688D82433BAD600F04B42 /* LaunchpadMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D72433BAD600F04B42 /* LaunchpadMapper.swift */; };
+		721688D82433BAD600F04B42 /* LaunchpadsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688D72433BAD600F04B42 /* LaunchpadsMapper.swift */; };
 		721688DB2433BBA100F04B42 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688DA2433BBA100F04B42 /* Initializable.swift */; };
 		721688DF2433BF8F00F04B42 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688DE2433BF8F00F04B42 /* ConfigurableCell.swift */; };
 		721688E12433BFA800F04B42 /* CellWithId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721688E02433BFA800F04B42 /* CellWithId.swift */; };
@@ -80,7 +80,7 @@
 		721688CD2433B97900F04B42 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		721688D12433BA0100F04B42 /* ObjectsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsMapper.swift; sourceTree = "<group>"; };
 		721688D42433BA8700F04B42 /* ObjectMapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperError.swift; sourceTree = "<group>"; };
-		721688D72433BAD600F04B42 /* LaunchpadMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadMapper.swift; sourceTree = "<group>"; };
+		721688D72433BAD600F04B42 /* LaunchpadsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadsMapper.swift; sourceTree = "<group>"; };
 		721688DA2433BBA100F04B42 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
 		721688DE2433BF8F00F04B42 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		721688E02433BFA800F04B42 /* CellWithId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithId.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		721688CF2433B9E100F04B42 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				721688D62433BACB00F04B42 /* LaunchpadMapper */,
+				721688D62433BACB00F04B42 /* LaunchpadsMapper */,
 				721688D32433BA7C00F04B42 /* Errors */,
 				721688D02433B9F200F04B42 /* Protocols */,
 			);
@@ -268,12 +268,12 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
-		721688D62433BACB00F04B42 /* LaunchpadMapper */ = {
+		721688D62433BACB00F04B42 /* LaunchpadsMapper */ = {
 			isa = PBXGroup;
 			children = (
-				721688D72433BAD600F04B42 /* LaunchpadMapper.swift */,
+				721688D72433BAD600F04B42 /* LaunchpadsMapper.swift */,
 			);
-			path = LaunchpadMapper;
+			path = LaunchpadsMapper;
 			sourceTree = "<group>";
 		};
 		721688D92433BB9900F04B42 /* Protocols */ = {
@@ -787,7 +787,7 @@
 				721688F62433D58B00F04B42 /* RealmBackgroundWriter.swift in Sources */,
 				721688DB2433BBA100F04B42 /* Initializable.swift in Sources */,
 				721689042433DA4000F04B42 /* FetchingViewModel.swift in Sources */,
-				721688D82433BAD600F04B42 /* LaunchpadMapper.swift in Sources */,
+				721688D82433BAD600F04B42 /* LaunchpadsMapper.swift in Sources */,
 				72315E8624327BBF00DC956D /* BaseCoordinator.swift in Sources */,
 				721688C12433B5BE00F04B42 /* Launchpad.swift in Sources */,
 				72315E5F24325E9200DC956D /* LaunchpadRouter.swift in Sources */,
