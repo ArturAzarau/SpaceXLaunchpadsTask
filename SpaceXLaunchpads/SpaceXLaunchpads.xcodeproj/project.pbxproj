@@ -178,7 +178,6 @@
 		721688B924339FD000F04B42 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				721689062433DC7C00F04B42 /* Base */,
 				721688DC2433BF7B00F04B42 /* Cells */,
 				72315E732432680200DC956D /* Protocols */,
 				7216891B24341D7800F04B42 /* DisplayLaucnhpadsVC.swift */,
@@ -379,14 +378,6 @@
 			children = (
 				721689032433DA4000F04B42 /* FetchingViewModel.swift */,
 				721689072433DCAF00F04B42 /* FetchingAndBGCachingViewModel.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		721689062433DC7C00F04B42 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				72315E3D243259BC00DC956D /* FetchingVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -637,6 +628,7 @@
 				724760CB24369DA90010391E /* BaseViewController.swift */,
 				724760D424369F570010391E /* BaseInitializableView.swift */,
 				728583482436C03A00D0E397 /* BaseViewControllerWithViewModel.swift */,
+				72315E3D243259BC00DC956D /* FetchingVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
