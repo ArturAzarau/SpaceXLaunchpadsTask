@@ -69,7 +69,6 @@ extension LaunchpadDetailsView: ConfigurableView {
     func configure(with object: Launchpad) {
         nameLabel.text = object.location.name
         regionLabel.text = object.location.region
-        print(object.location)
         detailsTextView.text = object.details
     }
 }
