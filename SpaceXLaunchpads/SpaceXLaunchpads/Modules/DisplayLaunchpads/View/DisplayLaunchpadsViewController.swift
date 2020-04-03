@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class DisplayLaunchpadsVC: FetchingVC<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, FetchingAndBGCachingViewModel<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, RealmDatabaseService>>, DisplayLaunchpadsModule {
+final class DisplayLaunchpadsViewController: FetchingViewController<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, FetchingAndBGCachingViewModel<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, RealmDatabaseService>>, DisplayLaunchpadsModule {
     
     var onLoading: ParameterClosure<Bool>?
     var onItemSelected: ParameterClosure<Launchpad>?

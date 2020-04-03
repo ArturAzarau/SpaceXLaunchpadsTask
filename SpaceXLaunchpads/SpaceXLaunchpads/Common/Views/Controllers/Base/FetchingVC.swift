@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FetchingVC<MapperType: ObjectsMapper, ModelType, CellMakerType: CellMaker, ViewModelType>: UITableViewController where ViewModelType: FetchingViewModel<MapperType, ModelType, CellMakerType> {
+class FetchingViewController<MapperType: ObjectsMapper, ModelType, CellMakerType: CellMaker, ViewModelType>: UITableViewController where ViewModelType: FetchingViewModel<MapperType, ModelType, CellMakerType> {
     
     let viewModel: ViewModelType
     

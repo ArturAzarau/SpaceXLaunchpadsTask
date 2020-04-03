@@ -11,12 +11,12 @@ import UIKit
 extension ModuleFactory: LaunchpadsModuleFactory {
     func createLaunchpadDetailsModule(with launchpad: Launchpad) -> LaunchpadDetailsModule {
         let viewModel = LaunchpadDetailsViewModel(launchpad: launchpad)
-        return LaunchpadDetailsVC(viewModel: viewModel)
+        return LaunchpadDetailsViewController(viewModel: viewModel)
     }
     
     func createDisplayLaunchpadsModule(networkService: PromiseKitNetworkService, cellMaker: LaunchpadCellMaker) -> DisplayLaunchpadsModule {
         let viewModel = FetchingAndBGCachingViewModel<LaunchpadsMapper, Launchpad, LaunchpadCellMaker, RealmDatabaseService>(databaseService: RealmDatabaseService(), networkService: networkService, cellMaker: cellMaker)
-        return DisplayLaunchpadsVC(viewModel: viewModel)
+        return DisplayLaunchpadsViewController(viewModel: viewModel)
     }
     
     func createLoadingScreenModule() -> Presentable {
