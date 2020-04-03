@@ -66,6 +66,7 @@
 		724760D524369F570010391E /* BaseInitializableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D424369F570010391E /* BaseInitializableView.swift */; };
 		724760D724369FF00010391E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D624369FF00010391E /* UIView+Extensions.swift */; };
 		724760D92436AEF10010391E /* ApplicationModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760D82436AEF10010391E /* ApplicationModuleFactory.swift */; };
+		724760DB2436BAF20010391E /* ConvertableToValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724760DA2436BAF20010391E /* ConvertableToValue.swift */; };
 		BBE28A65F88B65B461B4742B /* Pods_SpaceXLaunchpads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +133,7 @@
 		724760D424369F570010391E /* BaseInitializableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInitializableView.swift; sourceTree = "<group>"; };
 		724760D624369FF00010391E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		724760D82436AEF10010391E /* ApplicationModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModuleFactory.swift; sourceTree = "<group>"; };
+		724760DA2436BAF20010391E /* ConvertableToValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertableToValue.swift; sourceTree = "<group>"; };
 		88696B6CD63006A631632761 /* Pods-SpaceXLaunchpads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXLaunchpads.release.xcconfig"; path = "Target Support Files/Pods-SpaceXLaunchpads/Pods-SpaceXLaunchpads.release.xcconfig"; sourceTree = "<group>"; };
 		B92696A4E8804233408C4060 /* Pods_SpaceXLaunchpads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXLaunchpads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -280,6 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				721688DA2433BBA100F04B42 /* Initializable.swift */,
+				724760DA2436BAF20010391E /* ConvertableToValue.swift */,
+				721689002433D91A00F04B42 /* FillableWithValues.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -366,19 +370,10 @@
 		721688FA2433D5DF00F04B42 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				721688FF2433D90800F04B42 /* Protocols */,
 				721688FB2433D5E900F04B42 /* RealmLaunchpad.swift */,
 				721688FD2433D62400F04B42 /* RealmLocation.swift */,
 			);
 			path = Realm;
-			sourceTree = "<group>";
-		};
-		721688FF2433D90800F04B42 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				721689002433D91A00F04B42 /* FillableWithValues.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		721689052433DBE400F04B42 /* Base */ = {
@@ -810,6 +805,7 @@
 				721688DF2433BF8F00F04B42 /* ConfigurableCell.swift in Sources */,
 				721688D22433BA0100F04B42 /* ObjectsMapper.swift in Sources */,
 				721688E82433C04900F04B42 /* CellMaker.swift in Sources */,
+				724760DB2436BAF20010391E /* ConvertableToValue.swift in Sources */,
 				721689012433D91A00F04B42 /* FillableWithValues.swift in Sources */,
 				721688F12433D53900F04B42 /* BackgroundWritingDatabaseService.swift in Sources */,
 				7216890C2434115F00F04B42 /* UIAlertController+Extensions.swift in Sources */,

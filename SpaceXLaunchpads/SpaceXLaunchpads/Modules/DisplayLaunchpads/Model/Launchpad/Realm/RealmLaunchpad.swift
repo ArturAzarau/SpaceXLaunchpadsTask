@@ -34,19 +34,6 @@ final class RealmLaunchpad: Object {
 }
 
 extension RealmLaunchpad: FillableWithValues {
-    func convertToValue() -> Launchpad {
-        return .init(padid: padid,
-                     id: id,
-                     name: name,
-                     fullName: fullName,
-                     status: status,
-                     location: location?.convertToValue() ?? Location(),
-                     vehiclesLaunched: Array(vehiclesLaunched),
-                     attemptedLaunches: attemptedLaunches,
-                     successfulLaunches: successfulLaunches,
-                     wikipedia: wikipedia,
-                     details: details)
-    }
     
     func fillWith(value: Launchpad) {
         padid = value.padid
@@ -64,5 +51,22 @@ extension RealmLaunchpad: FillableWithValues {
         successfulLaunches = value.successfulLaunches
         wikipedia = value.wikipedia
         details = value.details
+    }
+}
+
+extension RealmLaunchpad: ConvertableToValue {
+    
+    func convertToValue() -> Launchpad {
+        return .init(padid: padid,
+                     id: id,
+                     name: name,
+                     fullName: fullName,
+                     status: status,
+                     location: location?.convertToValue() ?? Location(),
+                     vehiclesLaunched: Array(vehiclesLaunched),
+                     attemptedLaunches: attemptedLaunches,
+                     successfulLaunches: successfulLaunches,
+                     wikipedia: wikipedia,
+                     details: details)
     }
 }

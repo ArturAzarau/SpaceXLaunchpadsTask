@@ -10,5 +10,4 @@ protocol FillableWithValues {
     associatedtype Value
     
     func fillWith(value: Value)
-    func convertToValue() -> Value
 }

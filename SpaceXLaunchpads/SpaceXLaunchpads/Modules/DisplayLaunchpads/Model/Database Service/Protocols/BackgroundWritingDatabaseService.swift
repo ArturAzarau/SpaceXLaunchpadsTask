@@ -6,7 +6,7 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
-protocol BackgroundWritingDatabaseService: DatabaseService where Object: FillableWithValues, Object.Value == ObjectToFillWith {
+protocol BackgroundWritingDatabaseService: DatabaseService where Object: (FillableWithValues & ConvertableToValue), Object.Value == ObjectToFillWith, Object.ConvertationValue ==  ObjectToFillWith {
     
     associatedtype ObjectToFillWith
     
