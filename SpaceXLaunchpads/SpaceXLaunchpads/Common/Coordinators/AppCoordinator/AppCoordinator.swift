@@ -6,8 +6,6 @@
 //  Copyright © 2020 arturazarau. All rights reserved.
 //
 
-import Foundation
-
 final class AppCoordinator: BaseCoordinator {
         
     override func start() {
