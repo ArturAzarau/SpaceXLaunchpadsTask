@@ -24,6 +24,7 @@ final class LoadingScreenView: BaseInitializableView {
         super.configureAppearance()
         
         backView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        activityIndicator.style = .whiteLarge
     }
     
     override func configureLayout() {
